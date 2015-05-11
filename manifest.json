@@ -1,0 +1,62 @@
+{
+  "name": "Landing Page Ship",
+  "description": "Landing Page Ship",
+  "picture": "picture.png",
+  "index": "ship.html",
+  "version": "0.0.2",
+  "settings": [
+    {
+      "name": "background_image",
+      "label": "Background Image",
+      "format": "image",
+      "type": "string"
+    },
+    {
+      "name": "background_color",
+      "label": "Background Color",
+      "format": "color",
+      "default" : "#FFFFFF",
+      "type": "string"
+    },
+    {
+      "name": "background_blur",
+      "label": "Background Blur",
+      "format": "range",
+      "maximum" : 50,
+      "minimum" : 0,
+      "default" : 0,
+      "multipleOf" : 1,
+      "type": "number"
+    },
+    {
+      "name": "background_opacity",
+      "label": "Background opacity",
+      "format": "range",
+      "maximum" : 1,
+      "minimum" : 0,
+      "default" : 0,
+      "multipleOf" : 0.1,
+      "type": "number"
+    },
+    {
+      "name": "logo",
+      "label": "Background Image",
+      "format": "image",
+      "type": "string"
+    },
+    {
+      "name": "images",
+      "label": "Content Images",
+      "type": "array",
+      "format": "table",
+      "items": {
+        "format": "image",
+        "type": "string"
+      }
+    }
+  ],
+  "resources": [],
+  "locales": [
+    "en"
+  ]
+}

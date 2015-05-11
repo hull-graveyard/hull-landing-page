@@ -1,0 +1,69 @@
+{
+  "name": "landing-page",
+  "description": "A Landing Page Ship",
+  "version": "0.0.1",
+  "homepage": "https://github.com/unity/landing-page",
+  "license": "MIT",
+  "main": "dist/ship.js",
+  "author": {
+    "name": "Hull",
+    "email": "contact@hull.io",
+    "url": "https://github.com/hull"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unity/landing-page"
+  },
+  "bugs": {
+    "url": "https://github.com/unity/landing-page/issues"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/gulp server",
+    "prepublish": "./node_modules/.bin/gulp build"
+  },
+  "keywords": [
+    "hull",
+    "ship",
+    "hull-ship",
+    "react"
+  ],
+  "dependencies": {
+    "color": "^0.7.3",
+    "gh-pages": "^0.2.0",
+    "object-assign": "^2.0.0",
+    "react": ">=0.13.1",
+    "underscore": "^1.8.2",
+    "underscore-contrib": "^0.3.0"
+  },
+  "devDependencies": {
+    "moment": "^2.9.0",
+    "autoprefixer-loader": "^1.1.0",
+    "babel": "^4.4.5",
+    "babel-core": "^4.4.5",
+    "babel-loader": "^4.0.0",
+    "css": "^2.1.0",
+    "css-loader": "^0.9.0",
+    "del": "^1.1.0",
+    "file-loader": "^0.8.1",
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.1",
+    "json-loader": "^0.5.1",
+    "jsx": "^0.9.89",
+    "jsx-loader": "^0.12.2",
+    "less": "^2.4.0",
+    "less-loader": "^2.1.0",
+    "ngrok": "^0.1.99",
+    "node-notifier": "^4.1.0",
+    "open": "0.0.5",
+    "react-hot-loader": "^1.2.3",
+    "react-social-icons": "^1.1.0",
+    "react-tools": "^0.11.2",
+    "run-sequence": "^1.0.2",
+    "sass-loader": "^0.4.0-beta.1",
+    "stats-webpack-plugin": "0.0.1",
+    "style-loader": "unity/style-loader",
+    "touch": "0.0.3",
+    "webpack": "^1.7.1",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
