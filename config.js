@@ -22,8 +22,7 @@ var hotReload = true;
 // THESE ARE THE JS FILES USED AS ENTRY POINTS TO COMPILE YOUR APP
 
 var entry = {
-  ship:  "./"+sourceFolder+"/ship.js",
-  index: "./"+sourceFolder+"/index.js"
+  ship:  "./"+sourceFolder+"/ship.js"
 };
 
 // ADDITIONAL FILES TO BE COPIED BY GULP
@@ -32,9 +31,10 @@ function gulpDest(out){
 }
 
 var files = {
-  "src/styles/*.css"  : gulpDest("styles/"),
+  "src/styles/*.css" : gulpDest("styles/"),
   "src/vendors/**/*" : gulpDest("vendors/"),
   "src/images/**/*"  : gulpDest("images/"),
+  "src/locales/**/*" : gulpDest("locales/"),
   "manifest.json"    : outputFolder,
   "src/*.png"        : outputFolder,
   "src/*.html"       : outputFolder,
@@ -81,7 +81,6 @@ var cssIncludes   = modulesDirectories.map(function(include){
 var loaders = [
   {test: /\.json$/,                loaders: ["json-loader"] },
   {test: /\.js$/,                  loaders: ["babel-loader"], exclude: /node_modules|bower_components/},
-  {test: /\.jsx$/,                 loaders: ["react-hot", "babel-loader"], exclude: /node_modules/},
   {test: /\.(css|scss)$/,          loaders: ["style/useable", "css-loader", "autoprefixer-loader?browsers=last 2 version", "sass-loader?outputStyle=expanded&"+cssIncludes]},
   {test: /\.jpe?g$|\.gif$|\.png$/, loaders: ["file"]},
   {test: /\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file" },
