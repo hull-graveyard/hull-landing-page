@@ -1,0 +1,106 @@
+{
+  "name": "Landing Page Ship",
+  "description": "Landing Page Ship",
+  "picture": "picture.png",
+  "index": "ship.html",
+  "version": "0.0.2",
+  "settings": [
+    {
+      "name": "cta_link",
+      "title": "Call to action link",
+      "format": "string",
+      "type": "string"
+    },
+    {
+      "name": "logo",
+      "title": "Background Image",
+      "format": "image",
+      "type": "string"
+    },
+    {
+      "name": "background_image",
+      "title": "Background Image",
+      "format": "image",
+      "type": "string"
+    },
+    {
+      "name": "background_color",
+      "title": "Background Color",
+      "format": "color",
+      "default" : "#FFFFFF",
+      "type": "string"
+    },
+    {
+      "name": "button_border_radius",
+      "title": "Button Radius",
+      "format": "range",
+      "maximum" : 100,
+      "minimum" : 0,
+      "default" : 0,
+      "multipleOf" : 1,
+      "type": "number"
+    },
+    {
+      "name": "button_background_color",
+      "title": "Button Color",
+      "format": "color",
+      "default" : "#ebaa00",
+      "type": "string"
+    },
+    {
+      "name": "button_text_color",
+      "title": "Button Text Color",
+      "format": "color",
+      "default" : "#FFFFFF",
+      "type": "string"
+    },
+    {
+      "name": "text_color",
+      "title": "Text color",
+      "format": "color",
+      "default" : "#FFFFFF",
+      "type": "string"
+    },
+    {
+      "name": "title_color",
+      "title": "Title color",
+      "format": "color",
+      "default" : "#FFFFFF",
+      "type": "string"
+    },
+    {
+      "name": "background_blur",
+      "title": "Background Blur",
+      "format": "range",
+      "maximum" : 50,
+      "minimum" : 0,
+      "default" : 0,
+      "multipleOf" : 1,
+      "type": "number"
+    },
+    {
+      "name": "background_opacity",
+      "title": "Background opacity",
+      "format": "range",
+      "maximum" : 1,
+      "minimum" : 0,
+      "default" : 0,
+      "multipleOf" : 0.1,
+      "type": "number"
+    },
+    {
+      "name": "images",
+      "title": "Content Images",
+      "type": "array",
+      "format": "table",
+      "items": {
+        "format": "image",
+        "type": "string"
+      }
+    }
+  ],
+  "resources": [],
+  "locales": [
+    "en"
+  ]
+}
