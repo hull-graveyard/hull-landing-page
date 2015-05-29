@@ -79,11 +79,7 @@ var cssIncludes   = modulesDirectories.map(function(include){
 // Basically, this fixes all of our problems with badly constructed AMD modules.
 // Among which: vex, datepicker, underscore-contrib
 var loaders = [
-  {test: /\.json$/,                loaders: ["json-loader"] },
   {test: /\.js$/,                  loaders: ["babel-loader"], exclude: /node_modules|bower_components/},
-  {test: /\.(css|scss)$/,          loaders: ["style/useable", "css-loader", "autoprefixer-loader?browsers=last 2 version", "sass-loader?outputStyle=expanded&"+cssIncludes]},
-  {test: /\.jpe?g$|\.gif$|\.png$/, loaders: ["file"]},
-  {test: /\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file" },
 ];
 
 // We remove the "dist" from the filenames for demo and index.html in package.json

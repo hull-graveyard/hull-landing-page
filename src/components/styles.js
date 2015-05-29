@@ -1,4 +1,5 @@
-import Color      from 'color';
+import Color from 'color-js';
+
 export default function(settings){
   let style = `
     .ship-root {
@@ -9,7 +10,7 @@ export default function(settings){
       color: ${settings.title_color};
     }
     h1 small, h2 small, h3 small, h4 small, h5 small, h6 small{
-      color: ${Color(settings.title_color).alpha(.6).rgbString()};
+      color: ${Color(settings.title_color).setAlpha(.6).toCSS()};
     }
     .btn{
       -webkit-border-radius:${settings.button_border_radius}px;
@@ -19,7 +20,7 @@ export default function(settings){
     }
     .btn-main{
       color: ${settings.button_text_color};
-      border-color: ${Color(settings.button_background_color).darken(.05).rgbString()};
+      border-color: ${Color(settings.button_background_color).darkenByRatio(.1).toCSS()};
       background-color: ${settings.button_background_color};
     }
     .content::after{
