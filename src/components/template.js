@@ -54,7 +54,7 @@ let templates = {
   `,
 
   images:`
-    <div class="images mt-4 flex-row">
+    <div class="images pt-4 pb-4 row flex-row">
       {{#settings.images}}
         <div class="col-xs-2 small-ps flex-item">
           <img src="{{.}}" class="img-responsive" />

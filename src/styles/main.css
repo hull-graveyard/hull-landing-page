@@ -59,6 +59,7 @@ h1 strong, h2 strong{
 }
 
 .flex-row{
+  display: flexbox;
   display: flex;
 }
 .flex-item{

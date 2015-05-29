@@ -28,12 +28,10 @@ import template from './components/template';
     content.push(template('cta', view));
     content.push(template('images', view));
 
-    console.log(content.join(''))
-
     $(rootElement)
     .find('.ship-root')
     .empty()
-    .append(`<div class="content">${content.join('')}</div>`);
+    .append(`<div class="content"><div class="container">${content.join('')}</div></div>`);
 
   }
   Hull.onEmbed(start);

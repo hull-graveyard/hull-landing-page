@@ -1,6 +1,6 @@
 {
-  "header" : "Welcome to ",
-  "tagline" : "Enter Content Here",
-  "call_to_action" : "Click Here",
-  "content" : "Enter Subtext here"
+  "header" : "The <code>code</code> crafters",
+  "tagline" : "<br /><i>est. 1863</i><br /><br />",
+  "content" : "This is a demo for a <i>simple</i> Landing page that you can deploy anywhere",
+  "call_to_action" : "<strong>Get coding</strong> <i>(pretty please ?)</i>"
 }
