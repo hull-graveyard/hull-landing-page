@@ -1,9 +1,23 @@
 {
   "name": "Landing Page Ship",
-  "description": "Landing Page Ship",
+  "description": "Displays a landing page with customizable Background, content, call to action and a row of Images",
   "picture": "picture.png",
   "index": "ship.html",
   "version": "0.0.2",
+  "deployment_settings":[
+    {
+      "name"       : "_selector",
+      "default"    : "body",
+      "type"       : "string",
+      "format"     : "string"
+    },
+    {
+      "name"       : "_placement",
+      "default"    : "append",
+      "type"       : "string",
+      "format"     : "string"
+    }
+  ],
   "settings": [
     {
       "name": "cta_link",
