@@ -74,6 +74,9 @@ export default function(settings){
       background: ${settings.background_color};
       color: ${settings.text_color};
     }
+    a, a:hover {
+      color: ${settings.link_color};
+    }
     h1, h2, h3, h4, h5, h6{
       color: ${settings.title_color};
     }

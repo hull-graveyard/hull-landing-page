@@ -45,6 +45,13 @@
       "type": "string"
     },
     {
+      "name": "link_color",
+      "title": "Link Color",
+      "format": "color",
+      "default" : "#FFFFFF",
+      "type": "string"
+    },
+    {
       "name": "button_border_radius",
       "title": "Button Radius",
       "format": "range",
