@@ -41,7 +41,7 @@
       "name": "background_color",
       "title": "Background Color",
       "format": "color",
-      "default" : "#FFFFFF",
+      "default" : "#0173E3",
       "type": "string"
     },
     {
@@ -58,7 +58,7 @@
       "name": "button_background_color",
       "title": "Button Color",
       "format": "color",
-      "default" : "#ebaa00",
+      "default" : "#2C4159",
       "type": "string"
     },
     {
