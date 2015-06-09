@@ -19,9 +19,11 @@ import template from './components/template';
     content.push(styles);
 
     let view    = {settings, translations}
-    view.settings.logo = getResizedImage(view.settings.logo);
 
-    content.push(template('logo', view));
+    if(view.settings.logo){
+      view.settings.logo = getResizedImage(view.settings.logo);
+      content.push(template('logo', view));
+    }
     content.push(template('header', view));
     content.push(template('tagline', view));
     content.push(template('content', view));
